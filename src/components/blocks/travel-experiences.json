@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_travel_experiences",
+  "info": {
+    "displayName": "Travel Experiences"
+  },
+  "options": {},
+  "attributes": {
+    "tagline": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "component",
+      "component": "shared.experience",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

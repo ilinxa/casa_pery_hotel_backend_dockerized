@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  strapi:
+    build: .
+    container_name: strapi-casapery
+    restart: always
+    env_file: .env
+    expose:
+      - "1337"
+    networks:
+      - web
+    volumes:
+      - ./public/uploads:/app/public/uploads
+      - strapi-casapery-data:/app/.tmp
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.casapery.rule=Host(`casapery.servex.cloud`)"
+      - "traefik.http.routers.casapery.entrypoints=websecure"
+      - "traefik.http.routers.casapery.tls.certresolver=mytlschallenge"
+      
+volumes:
+  strapi-casapery-data:
+
+networks:
+  web:
+    external: true

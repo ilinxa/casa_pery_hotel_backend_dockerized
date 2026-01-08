@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_services",
+  "info": {
+    "displayName": "Services"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "serviceCards": {
+      "type": "component",
+      "component": "shared.service-card",
+      "repeatable": true,
+      "max": 6
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_journals_sections",
+  "info": {
+    "displayName": "Journals section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "tagline": {
+      "type": "string",
+      "required": true
+    },
+    "journals": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::journal.journal"
+    }
+  },
+  "config": {}
+}

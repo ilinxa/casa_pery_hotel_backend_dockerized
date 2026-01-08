@@ -1,0 +1,81 @@
+{
+  "collectionName": "components_shared_links",
+  "info": {
+    "displayName": "Link"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "default": "link Label",
+      "required": true
+    },
+    "isWhatsApp": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    },
+    "isExternal": {
+      "type": "boolean",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "isWhatsApp"
+            },
+            false
+          ]
+        }
+      },
+      "default": false
+    },
+    "href": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "isWhatsApp"
+            },
+            false
+          ]
+        }
+      }
+    },
+    "whatsApp_number": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "isWhatsApp"
+            },
+            true
+          ]
+        }
+      }
+    },
+    "isButtonLink": {
+      "type": "boolean",
+      "default": false
+    },
+    "btnType": {
+      "type": "enumeration",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "isButtonLink"
+            },
+            true
+          ]
+        }
+      },
+      "enum": [
+        "PRIMARY",
+        "SECONDARY"
+      ]
+    }
+  },
+  "config": {}
+}

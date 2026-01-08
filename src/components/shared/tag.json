@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_tags",
+  "info": {
+    "displayName": "Tag"
+  },
+  "options": {},
+  "attributes": {
+    "tagName": {
+      "type": "string",
+      "maxLength": 18
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_blocks_prefaces",
+  "info": {
+    "displayName": "Preface"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "component",
+      "component": "blocks.headline",
+      "repeatable": false
+    },
+    "aboutus": {
+      "type": "component",
+      "component": "blocks.about-us",
+      "repeatable": false
+    },
+    "bgImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  },
+  "config": {}
+}

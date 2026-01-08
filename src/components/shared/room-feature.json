@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_room_features",
+  "info": {
+    "displayName": "roomFeature"
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "enumeration",
+      "enum": [
+        "King Bed",
+        "Ocean View",
+        "Private Balcony",
+        "Rainfall Shower",
+        "Private Pool",
+        "Garden View",
+        "Outdoor Shower",
+        "Living Area",
+        "Infinity Pool",
+        "Butler Service",
+        "Full Kitchen",
+        "Beach Access",
+        "Spa Bath",
+        "Private Deck",
+        "Fireplace",
+        "Mountain View"
+      ]
+    }
+  },
+  "config": {}
+}

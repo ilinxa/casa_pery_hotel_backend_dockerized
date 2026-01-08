@@ -1,0 +1,69 @@
+{
+  "collectionName": "components_layout_room_infos",
+  "info": {
+    "displayName": "roomInfo"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "priceUnit": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "occupancy": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "suit": {
+      "type": "boolean",
+      "default": true
+    },
+    "rating": {
+      "type": "decimal",
+      "min": 0,
+      "max": 5
+    },
+    "features": {
+      "type": "component",
+      "component": "shared.features",
+      "repeatable": true
+    },
+    "available": {
+      "type": "integer",
+      "required": true,
+      "default": 0,
+      "min": 0
+    },
+    "img360": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  },
+  "config": {}
+}

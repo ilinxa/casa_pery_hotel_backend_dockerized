@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_shared_nav_links",
+  "info": {
+    "displayName": "navLink"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "isPage": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "href": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "isPage"
+            },
+            false
+          ]
+        }
+      }
+    },
+    "pageLink": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "isPage"
+            },
+            true
+          ]
+        }
+      }
+    }
+  },
+  "config": {}
+}

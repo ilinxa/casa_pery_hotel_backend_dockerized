@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_blocks_event_cards",
+  "info": {
+    "displayName": "Event Card"
+  },
+  "options": {},
+  "attributes": {
+    "isActive": {
+      "type": "boolean",
+      "default": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "bgImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "label": {
+      "type": "string",
+      "default": "Label",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "bulletPoints": {
+      "type": "component",
+      "component": "shared.bulet-points",
+      "repeatable": true,
+      "max": 5
+    },
+    "cta": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

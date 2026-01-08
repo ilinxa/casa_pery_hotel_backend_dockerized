@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_blocks_about_us_s",
+  "info": {
+    "displayName": "About Us "
+  },
+  "options": {},
+  "attributes": {
+    "image_1": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "image_2": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "tagline": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description_1": {
+      "type": "text"
+    },
+    "description_2": {
+      "type": "text"
+    },
+    "bottomTagline": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false,
+      "required": true
+    }
+  },
+  "config": {}
+}

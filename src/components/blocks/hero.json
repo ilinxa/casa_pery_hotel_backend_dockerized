@@ -1,0 +1,68 @@
+{
+  "collectionName": "components_blocks_heroes",
+  "info": {
+    "displayName": "Hero",
+    "icon": "house"
+  },
+  "options": {},
+  "attributes": {
+    "heroImg": {
+      "type": "media",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "video"
+            },
+            false
+          ]
+        }
+      },
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "heroVid": {
+      "type": "media",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "video"
+            },
+            true
+          ]
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "files",
+        "videos"
+      ]
+    },
+    "video": {
+      "type": "boolean",
+      "default": false
+    },
+    "tagLine": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "herocard": {
+      "type": "component",
+      "component": "layout.hero-image",
+      "repeatable": true,
+      "required": true,
+      "min": 3,
+      "max": 3
+    }
+  },
+  "config": {}
+}

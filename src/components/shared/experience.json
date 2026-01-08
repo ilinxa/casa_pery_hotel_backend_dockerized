@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_experiences",
+  "info": {
+    "displayName": "Experience"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "note": {
+      "type": "text"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

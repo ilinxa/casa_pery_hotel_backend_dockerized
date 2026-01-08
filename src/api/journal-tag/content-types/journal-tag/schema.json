@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "journal_tags",
+  "info": {
+    "singularName": "journal-tag",
+    "pluralName": "journal-tags",
+    "displayName": "Journal Tag"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "journal_tag": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::journal.journal",
+      "mappedBy": "journal_tags"
+    }
+  }
+}

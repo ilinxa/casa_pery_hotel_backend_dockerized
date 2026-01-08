@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_blocks_bottom_cards",
+  "info": {
+    "displayName": "Bottom Card"
+  },
+  "options": {},
+  "attributes": {
+    "tagline": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "fileDownloader": {
+      "type": "component",
+      "component": "shared.file-download-btn",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

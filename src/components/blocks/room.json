@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_blocks_rooms",
+  "info": {
+    "displayName": "Rooms"
+  },
+  "options": {},
+  "attributes": {
+    "tagline": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "room": {
+      "type": "component",
+      "component": "layout.room-info",
+      "repeatable": true
+    },
+    "cta": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false,
+      "required": true
+    }
+  },
+  "config": {}
+}

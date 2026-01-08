@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_shared_file_download_btns",
+  "info": {
+    "displayName": "fileDownloadBtn"
+  },
+  "options": {},
+  "attributes": {
+    "fileUrl": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "externalFile"
+            },
+            true
+          ]
+        }
+      },
+      "required": false
+    },
+    "externalFile": {
+      "type": "boolean",
+      "default": false
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "file": {
+      "type": "media",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "externalFile"
+            },
+            false
+          ]
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}
